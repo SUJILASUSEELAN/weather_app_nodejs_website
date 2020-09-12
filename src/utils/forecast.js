@@ -9,8 +9,8 @@ const forecast = (latitude,longitude,callback) =>{
                 callback("Location Invalid",undefined)
             }
             else{
-                const{name} = body
-                callback(undefined,body.weather[0].description +". Temperature of "+name+" is "+body.main.temp+" degree")
+                const{name,wind} = body
+                callback(undefined,body.weather[0].description +". Temperature of "+name+" is "+body.main.temp+" degree." + " The speed of wind is " +wind.speed+" km/hr")
             }
               
         })
