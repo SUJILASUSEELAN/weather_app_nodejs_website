@@ -4,7 +4,7 @@ const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
 
-const app =express()
+const app = express()
 
 //Define paths for express config
 const publicDirectoryPath = path.join(__dirname,'../public')
